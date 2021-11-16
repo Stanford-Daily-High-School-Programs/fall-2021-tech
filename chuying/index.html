@@ -1,5 +1,421 @@
 <!DOCTYPE html>
 <html>
-    <! --- add your index.html file and other files here! to this folder with your name!! --->
-    <h1>Test</h1>
+  <title>The Stanford Daily</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma" />
+  <link rel="stylesheet" href="stanforddaily.css" />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Karma", sans-serif;
+    }
+    .w3-bar-block .w3-bar-item {
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <!-- Sidebar (hidden by default) -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+      id="mySidebar"
+      style="display: none; z-index: 2; width: 40%; min-width: 300px;"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >Close Menu</a
+      >
+      <a
+        href="https://www.stanforddaily.com/category/news/"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >News</a
+      >
+      <a
+        href="https://www.stanforddaily.com/category/sports/"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >Sports</a
+      >
+      <a
+        href="https://www.stanforddaily.com/category/sports/"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >Opinions</a
+      >
+      <a
+        href="https://www.stanforddaily.com/category/arts-life/"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button"
+        >Arts and Life</a
+      >
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+      <div class="w3-white w3-xlarge" style="max-width: 1200px; margin: auto;">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">
+          <img
+            src="https://raw.githubusercontent.com/TheStanfordDaily/stanforddaily-graphic-assets/main/DailyLogo/DailyLogo.png"
+            width="30%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div
+      class="w3-main w3-content w3-padding"
+      style="max-width: 1200px; margin-top: 100px;"
+    >
+      <!-- First Photo Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/11/P1030034-scaled.jpg"
+            alt="Article image"
+            style="width: 100%;"
+          />
+          <h3>
+            Stanford announces new explore energy program and energy-themed dorm
+          </h3>
+          <p>
+            Stanford’s Precourt Institute for Energy announced the creation of
+            its new literacy-focused Explore Energy program and energy-themed
+            dorm at its Thursday launch.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/11/2021.11.09_Cecil-H-Green-Library-1-scaled.jpg"
+            alt="Image"
+            style="width: 100%;"
+          />
+          <h3>Staff shortages keep Green Library shuttered at night</h3>
+          <p>
+            Stanford libraries have struggled with staffing shortages and
+            adjustments to new pandemic protocols since the return of in-person
+            learning.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/10/2021.10.13_Montag-Hall-7-scaled.jpg"
+            alt="image"
+            style="width: 100%;"
+          />
+          <h3>
+            Stanford extends test-optional policy for Class of 2027 and transfer
+            applicants
+          </h3>
+          <p>
+            Stanford announced on Wednesday that it will not require first-year
+            and transfer applicants to submit standardized test scores during
+            the 2022-23 admissions season.
+          </p>
+          <p>What else?</p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/11/auditor.png"
+            alt="UC Berkeley Ph.D. student proposes third-party auditor system to improve AI"
+            style="width: 100%;"
+          />
+          <h3>
+            UC Berkeley Ph.D. student proposes third-party auditor system to
+            improve AI
+          </h3>
+          <p>
+            UC Berkeley computer science Ph.D. student Deb Raji proposed
+            third-party auditor access as a method of improving artificial
+            intelligence (AI) evaluation and accountability during a Wednesday
+            speaker panel.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Photo Grid-->
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/11/Spencer-Jones-Team-Huddle_BD_110921_113-scaled.jpg"
+            alt="Image"
+            style="width: 100%;"
+          />
+          <h3>Santa Clara delivers men’s basketball first loss of season</h3>
+          <p>
+            After toppling Tarleton State 62-50 in its home opener, Cardinal
+            men’s basketball (1-1, 0-0 Pac-12) lost 88-72 in its first road game
+            of the season on Friday night to Santa Clara (2-0, 0-0 WCC).
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2020/12/Screen-Shot-2020-12-08-at-5.38.55-PM.png"
+            alt="Image"
+            style="width: 100%;"
+          />
+          <h3>
+            Beyond baby talk: Adult-infant conversations impact brain network
+            connections
+          </h3>
+          <p>
+            Infants who hold direct conversations with adults experience
+            significant positive impacts in language comprehension, a new study
+            conducted by Stanford psychologists finds.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2020/11/thumbnail_IMG_3165.jpg"
+            alt="Image"
+            style="width: 100%;"
+          />
+          <h3>
+            Stanford shores up testing availability as 15 staff members test
+            positive for COVID-19
+          </h3>
+          <p>
+            Amid a surge in COVID-19 cases and hospitalizations across the
+            county and state, Stanford reported 15 positive tests among faculty,
+            staff and postdocs in the past week and no new student cases.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            src="https://wp.stanforddaily.com/wp-content/uploads/2020/12/MG_5399.jpg"
+            alt="Image"
+            style="width: 100%;"
+          />
+          <h3>
+            Stanford to start administering COVID-19 vaccines to medical workers
+            next week
+          </h3>
+          <p>
+            Stanford will begin administering a limited supply of COVID-19
+            vaccines to essential health care personnel on Dec. 18.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+      </div>
+
+      <hr id="about" />
+
+      <!-- From w3 schools https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self -->
+      <div class="w3-container w3-padding-32 w3-center">
+        <h2 class="w3-center">Cartoons</h2>
+
+        <div class="w3-content w3-display-container">
+          <img
+            class="mySlides"
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/10/IMG_0487.jpg"
+            width="100%"
+            height="100%"
+          />
+          <img
+            class="mySlides"
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/10/image_from_ios-scaled.jpg"
+            width="100%"
+            height="100%"
+          />
+          <img
+            class="mySlides"
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/09/crossword-graphic-scaled.jpg"
+            width="100%"
+            height="100%"
+          />
+          <img
+            class="mySlides"
+            src="https://wp.stanforddaily.com/wp-content/uploads/2021/06/YearlyWrapUp.jpg"
+            width="100%"
+            height="100%"
+          />
+
+          <button
+            class="w3-button w3-black w3-display-left"
+            onclick="plusDivs(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="w3-button w3-black w3-display-right"
+            onclick="plusDivs(1)"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <div class="w3-padding-32">
+          <h4><b>About Us</b></h4>
+          <h6><i>The Stanford Daily Publishing Corporation</i></h6>
+          <p>
+            The Stanford Daily is the independent, student-run newspaper of
+            Stanford University. The Daily was originally founded as a small
+            pamphlet known as The Daily Palo Alto in 1892 and has been a campus
+            fixture ever since. The Daily strives to serve the Stanford
+            community with relevant, unbiased journalism and provides its
+            editorial, tech and business staffs with unparalleled educational
+            opportunities.The Daily became independent of Stanford University in
+            1973 after a years-long clash with the administration spurred in
+            part by disagreements over The Daily’s coverage of anti-Vietnam War
+            protests. In particular, a strongly worded 1970 op-ed in the
+            newspaper entitled “Snitches and Oppression,” penned by Diarmuid
+            McGuire M.A. ’73, drew concerns from University administrators that
+            the school might be held liable for any violence incited by the
+            article. Independence for The Daily was thus a logical conclusion
+            for both sides: The Daily’s disentanglement from the University
+            would make it impossible for the University to attempt to influence
+            reporting through financial withholding or other means, and the
+            University’s disentanglement from The Daily would release it of any
+            potential liability for content published in the newspaper. Thus, in
+            1973, The Stanford Daily Publishing Corporation was incorporated in
+            Santa Clara County as a 501(c)(3) nonprofit organization.
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Footer -->
+      <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+          <h3>FOOTER</h3>
+          <p>
+            © 2021 THE STANFORD DAILY PUBLISHING CORPORATION
+          </p>
+          <p>
+            Powered by
+            <a
+              href="https://www.w3schools.com/w3css/default.asp"
+              target="_blank"
+              >w3.css</a
+            >
+          </p>
+        </div>
+
+        <div class="w3-third">
+          <h3>NEWS</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+              <img
+                src="https://production.listennotes.com/podcasts/the-daily-brew-the-stanford-daily-dcFLEgziPVR-4Y7bCF21QUx.1400x1400.jpg"
+                class="w3-left w3-margin-right"
+                style="width: 50px;"
+              />
+              <span class="w3-large">Podcast</span><br />
+              <span>The Daily Brew</span>
+            </li>
+            <li class="w3-padding-16">
+              <img
+                src="https://wp.stanforddaily.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-06-at-6.17.09-PM.png"
+                class="w3-left w3-margin-right"
+                style="width: 50px;"
+              />
+              <span class="w3-large">Data</span><br />
+              <span>Stanford’s Class of 2021 by the numbers </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third w3-serif">
+          <h3>POPULAR TAGS</h3>
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Stanford</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >News</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Art</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >City</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >University</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Opinion</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Magazine</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >A&L</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Sports</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Grind</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Review</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Humor</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Cartoon</span
+            >
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+              >Podcasts</span
+            >
+          </p>
+        </div>
+      </footer>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
 </html>
